@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$47 Home Energy Savings Checkup | Save $500+ Guaranteed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #0066cc;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .highlight {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            background: #e8491d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background: #ff6347;
+        }
+        .benefits, .process, .guarantee, .testimonials {
+            margin-top: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        .benefits ul, .process ol {
+            padding-left: 20px;
+        }
+        .testimonial {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @media(max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Save $$500+ on Energy Bills <span class="highlight">Guaranteed</span></h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Introducing Our $47 Home Energy Savings Checkup</h2>
+            <p>Discover how you can slash your energy bills and increase your home's comfort in just 60 minutes!</p>
+            <a href="#book-now" class="button">Book Your Checkup Now</a>
+        </section>
+
+        <section class="benefits">
+            <h2>Here's What You Get:</h2>
+            <ul>
+                <li>Comprehensive 5-point energy analysis ($497 value)</li>
+                <li>Personalized Money-Saving Action Plan</li>
+                <li>Expert tips for a more comfortable, efficient home</li>
+                <li>Health & Safety Scan to protect your family</li>
+                <li>FREE Smart Thermostat ($250 value) with any recommended upgrade</li>
+            </ul>
+        </section>
+
+        <section class="guarantee">
+            <h2>Our Unbeatable Guarantee</h2>
+            <p>If we can't show you how to save at least $500 on your annual energy costs, your checkup is FREE!</p>
+        </section>
+
+        <section class="process">
+            <h2>How It Works:</h2>
+            <ol>
+                <li>Book your appointment online or by phone</li>
+                <li>Our expert performs the 60-minute, 5-point analysis</li>
+                <li>Receive your personalized Money-Saving Action Plan</li>
+                <li>Start saving immediately with our expert recommendations</li>
+            </ol>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say:</h2>
+            <div class="testimonial">
+                <p>"I was skeptical at first, but the checkup revealed so many ways to save energy. I've already cut my bills by 30%!" - Sarah J.</p>
+            </div>
+            <div class="testimonial">
+                <p>"The technician was professional and thorough. The smart thermostat alone has made a huge difference in our comfort and bills." - Mike T.</p>
+            </div>
+        </section>
+
+        <section id="book-now">
+            <h2>Ready to Start Saving?</h2>
+            <p>Book your $47 Home Energy Savings Checkup now and start your journey to lower bills and a more comfortable home!</p>
+            <a href="#" class="button">Book Your Checkup</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 [Insert our location name here]. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add a simple countdown timer
+        const countdownElement = document.createElement('p');
+        let timeLeft = 24 * 60 * 60; // 24 hours in seconds
+
+        function updateCountdown() {
+            const hours = Math.floor(timeLeft / 3600);
+            const minutes = Math.floor((timeLeft % 3600) / 60);
+            const seconds = timeLeft % 60;
+
+            countdownElement.textContent = `Offer expires in: ${hours}h ${minutes}m ${seconds}s`;
+            timeLeft--;
+
+            if (timeLeft < 0) {
+                clearInterval(countdownInterval);
+                countdownElement.textContent = 'Offer has expired!';
+            }
+        }
+
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        document.querySelector('.intro').appendChild(countdownElement);
+    </script>
+</body>
+</html>
